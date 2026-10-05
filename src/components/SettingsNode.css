@@ -1,0 +1,63 @@
+/* card */
+.settings-node {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px;        /* reduce outer padding */
+  min-width: 120px;    /* smaller min width */
+  max-width: 300px;    /* cap width */
+  font-size: 13px;
+}
+.settings-node-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 13px;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+.settings-node-table {
+  width: 100%;
+  border-spacing: 0;    /* remove spacing between cells */
+}
+
+/* table cells */
+.settings-node-table td {
+  vertical-align: middle;
+  max-width: 120px;    /* cap cell width */
+}
+
+.settings-node-table td:first-child {
+    width: 100%;
+    padding: 0;
+}
+
+.settings-node-table td:last-child {
+    white-space: nowrap;    /* prevent text from wrapping */
+    padding-left: 6px;
+}
+
+/* inputs inside cells */
+.settings-node-input {
+  box-sizing: border-box;
+  width: 100%;           /* allow cell-controlled width */
+  min-width: 0px;
+  max-width: 200px;      /* keep inputs compact */
+  padding: 4px 6px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.settings-node-remove {
+  background: #f44336;
+  padding: 0px 4px;
+  color: #fff;
+  border: none;          /* remove default border */
+}
+
+.react-flow__node.selected .settings-node {
+  border-color: #6ea8ff; /* light blue */
+  box-shadow: 0 0 0 3px rgba(110,168,255,0.50);
+  transition: border-color .12s ease, box-shadow .12s ease;
+}
